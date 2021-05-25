@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Глейси</title>
+	</head>
+	<body>
+		<!-- Шапка -->
+		<header>
+			<nav>
+				<a href="index.html">
+					<img src="https://via.placeholder.com/154x64" width="154" height="64" alt="">
+				</a>
+				<ul>
+					<li><a>Каталог</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+				<ul>
+					<li><button type="button">Поиск</button></li>
+					<li><button type="button">Вход</button></li>
+					<li><button type="button">2 товара</button></li>
+				</ul>
+			</nav>
+			<div>с 10 до 20, ежедневно
+				<br>
+				<a href="tel:88124502525">8 812 450-25-25</a>
+			</div>
+		</header>
+		<main>
+			<ul>
+				<li>Главная</li>
+				<li>Каталог</li>
+				<li>Сливочное</li>
+			</ul>
+			<h1>Cливочное мороженное</h1>
+			<form action="https://echo.htmlacademy.ru/courses" method="post">
+				<fieldset>
+					<legend>Сортировка:</legend>
+					<div>
+						<select name="sorting">
+							<option value="popular" selected>по популярности</option>
+							<option value="cheap" selected>сначала недорогие</option>
+							<option value="expensive" selected>сначала дорогие</option>
+							<option value="fat" selected>по жирности</option>
+						</select>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Цена: 100 ₽ – 500 ₽</legend>
+					<div>
+						<input type="range" min="0" max="1000" name="price">
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Жирность:</legend>
+					<div>
+						<label>
+							<input type="radio" name="fat" value="0%">
+							0%
+							<span>
+							</span>
+						</label>
+						<label>
+							<input type="radio" name="fat" value="до 10%" checked>
+							до 10%
+						</label>
+						<label>
+							<input type="radio" name="fat" value="до 30%">
+							до 30%"
+						</label>
+						<label>
+							<input type="radio" name="fat" value="выше 30%">
+							выше 30%
+						</label>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Наполнители:</legend>
+					<div>
+						<label>
+							<input type="checkbox" name="decor_chocolate" checked="">
+							шоколадные
+						</label>
+						<label>
+							<input type="checkbox" name="decor_shugar-powder" checked="">
+							сахарные присыпки
+						</label>
+						<label>
+							<input type="checkbox" name="decor_fruits">
+							фрукты
+						</label>
+						<label>
+							<input type="checkbox" name="decor_syrups">
+							сиропы
+						</label>
+						<label>
+							<input type="checkbox" name="decor_jams">
+							джемы
+						</label>
+					</div>
+				</fieldset>
+
+				<input type="submit" name="sent" value="Применить">
+			</form>
+
+			<section>
+				<h2>Наши товары</h2>
+				<ul>
+					<li>
+						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_1" width="267" height="267">
+							</a>
+							<p>310 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_2" width="267" height="267">
+							</a>
+							<p>380 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_3" width="267" height="267">
+							</a>
+							<p>355 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>415 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочное с брусничным джемом</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>325 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>410 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>315 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочное с шоколадной стружкой</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>320 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>440 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочноe с ментоловым сиропом</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>435 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+
+					<li>
+						<a href="#">Сливочное с кусочками черного шоколада</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>355 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li> 
+
+					<li>
+						<a href="#">Сливочное с мятным сиропом</a>
+						<div>
+							<a href="#">
+								<img src="https://via.placeholder.com/267x267" alt="ice-cream_bestseller_4" width="267" height="267">
+							</a>
+							<p>420 ₽<small>/кг</small></p>
+						</div>
+						<a href="#">Быстрый просмотр</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+			</section>
+		</main>
+		<!-- Подвал -->
+		<footer>
+			<!-- Соцсети -->
+			<ul>
+				<li>
+					<a href="#">
+						<img src="https://via.placeholder.com/32x32" alt="icon_facebook" width="32" height="32">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://via.placeholder.com/32x32" alt="icon_vk" width="32" height="32">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://via.placeholder.com/32x32" alt="icon_instagram" width="32" height="32">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://via.placeholder.com/32x32" alt="icon_twitter" width="32" height="32">
+					</a>
+				</li>
+			</ul>
+		<!-- /Соцсети -->
+
+			<ul>
+				<li>
+					<a href="#">
+						<img src="https://via.placeholder.com/15x13" alt="icon_heart" width="15" height="13">
+						Для поставщиков
+					</a>
+				</li>
+				<li> 
+					<a href="#">Наши документы</a>
+				</li>
+				<li>
+					<a href="#">О производстве</a>
+				</li>
+				<li>
+					<a href="#">О производстве</a>
+				</li>
+			</ul>
+
+			<div>
+				<img src="https://via.placeholder.com/108x31" alt="icon_html_academy" width="108" height="31">
+				<p>Сделано в HTML Academy © 2021</p>
+			</div>
+		</footer>
+		<!-- /Подвал -->
+	</body>
+</html>

@@ -1,0 +1,41 @@
+
+:root {
+  --basic-black:#323232;
+  --basic-dark: #5A5A5A;
+  --basic-white: #FFFFFF;
+  --background-beige: #9D8B84;
+  --background-grey: #8996A6;
+  --background-green: #849D8F;
+}
+
+
+body {
+	min-width: 1200px;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+	background-color: var(--background-beige);
+}
+
+.main-header__site-navigation-link {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+	text-decoration: none;
+}
+
+.main-header__site-navigation {
+	list-style: none;
+	display: flex;
+}
+
+.main-header__description
+
+.slider__item-description {
+
+}

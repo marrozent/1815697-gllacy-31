@@ -197,12 +197,14 @@ address {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
+	color: var(--basic-black);
 }
 
 .blog__link {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
+	color: var(--basic-black);
 }
 
 .inner-page {
@@ -272,5 +274,10 @@ address {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
+	color: var(--basic-white);
+}
+
+.link-academy {
+	text-decoration: none;
 	color: var(--basic-white);
 }

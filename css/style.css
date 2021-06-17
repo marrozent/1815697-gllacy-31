@@ -1,4 +1,3 @@
-
 :root {
   --basic-black:#323232;
   --basic-dark: #5A5A5A;
@@ -6,8 +5,9 @@
   --background-beige: #9D8B84;
   --background-grey: #8996A6;
   --background-green: #849D8F;
+  --link-active: #FFBC9E;
+  --link-hover: #FFBC9E;
 }
-
 
 body {
 	min-width: 1200px;
@@ -101,7 +101,7 @@ body {
 }
 
 .product__link {
-	font-weight: medium;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
 	text-decoration: none;
@@ -109,7 +109,6 @@ body {
 }
 
 .product__price {
-	font-family: "Roboto", Arial, sans-serif;
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 45px;
@@ -121,7 +120,7 @@ body {
 }
 
 .advantages__title {
-	font-weight: medium;
+	font-weight: 500;
 	font-size: 24px;
 	line-height: 30px;
 	color: var(--basic-black);
@@ -186,10 +185,23 @@ address {
 	text-decoration: none;
 }
 
-.footer-nav__link:active {
-	color: red;
-	background-image: url(images/);
-	
+.link:hover {
+	color: var(--link-hover);
 }
 
+.link:active {
+	color: var(--link-active);
+}
+
+.blog__title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.blog__link {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+}
 

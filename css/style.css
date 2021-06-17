@@ -205,3 +205,72 @@ address {
 	line-height: 30px;
 }
 
+.inner-page {
+	background-color: var(--background-green);
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-list__link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+	text-decoration: none;
+}
+
+.pagination-list__current-page {
+	color: var(--basic-black);
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs__link {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--basic-white);
+	text-decoration: none;
+}
+
+.catalog__title {
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.filter__title {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.filter__option {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+}
+
+.filter__radio {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.filter__checkbox {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.filter__submit {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+}

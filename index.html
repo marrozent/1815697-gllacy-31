@@ -15,43 +15,42 @@
 	<body class="page-body">
 		<!-- Шапка -->
 		<header class="main-header">
-			<div class="wrapper">
+			<div class="wrapper main-header__wrapper">
 				<nav class="main-header__navigation">
-					<a class="main-header__logo">
+					<a class="main-header__logo" href="index.html">
 						<img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
 					</a>
-					<div class="main-header__bar">
-						<div class="main-header__wrapper">
-							<ul class="main-header__site-navigation">
-								<li class="main-header__site-navigation-item">
-									<a class="main-header__site-navigation-link link" href="#">Каталог</a>
-								</li>
-								<li class="main-header__site-navigation-item">
-									<a class="main-header__site-navigation-link link" href="#">Доставка и оплата</a>
-								</li>
-								<li class="main-header__site-navigation-item">
-									<a class="main-header__site-navigation-link link" href="#">О компании</a>
-								</li>
-							</ul>
 
-							<ul class="main-header__user-navigation">
-								<li class="main-header__user-navigation-item">
-									<button class="main-header__user-navigation-button" type="button">
-										<img src="img/icons/loupe_icon.svg" alt="Поиск">
-									</button>
-								</li>
-								<li class="main-header__user-navigation-item">
-									<button class="main-header__user-navigation-button" type="button">
-										<img src="img/icons/enter_icon.svg" alt="Авторизация"> Вход
-									</button>
-								</li>
-								<li class="main-header__user-navigation-item">
-									<button class="main-header__user-navigation-button" type="button">
-										<img src="img/icons/shopping-cart_icon.svg" alt="Корзина">
-									</button>
-								</li>
-							</ul>
-						</div>
+					<div class="main-header__bar">
+						<ul class="main-header__site-navigation">
+							<li class="main-header__site-navigation-item">
+								<a class="main-header__site-navigation-link link" href="catalog.html">Каталог</a>
+							</li>
+							<li class="main-header__site-navigation-item">
+								<a class="main-header__site-navigation-link link" href="#">Доставка и оплата</a>
+							</li>
+							<li class="main-header__site-navigation-item">
+								<a class="main-header__site-navigation-link link" href="#">О компании</a>
+							</li>
+						</ul>
+
+						<ul class="main-header__user-navigation">
+							<li class="main-header__user-navigation-item">
+								<button class="main-header__user-navigation-button" type="button">
+									<img src="img/icons/loupe_icon.svg" alt="Поиск">
+								</button>
+							</li>
+							<li class="main-header__user-navigation-item">
+								<button class="main-header__user-navigation-button" type="button">
+									<img src="img/icons/enter_icon.svg" alt="Авторизация"> Вход
+								</button>
+							</li>
+							<li class="main-header__user-navigation-item">
+								<button class="main-header__user-navigation-button" type="button">
+									<img src="img/icons/shopping-cart_icon.svg" alt="Корзина">
+								</button>
+							</li>
+						</ul>
 					</div>
 				</nav>
 				<div class="main-header__description">с 10 до 20, ежедневно
@@ -221,14 +220,14 @@
 					<h2 class="hidden">Адрес и телефон для связи</h2>
 					<!-- <img class="address__map" src="img/map.jpg" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург" width="1200" height="430"> -->
 					<img class="address__icon" src="img/icons/ice-cream_map.svg" width="80" height="140" alt="">
-					<div class="address__info">
+					<!-- <div class="address__info">
 						<p class="address__description">Адрес главного офиса и офлайн-магазина:</p>
 						<address class="adress__adress">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
 						<p class="address__description">Для заказов по телефону:</p>
 						<a class="address__phone" href="tel:+78005558628">+7 800 555-86-28</a>
 						<p class="address__description">(с 10 до 20 ежедневно)</p>
 						<button class="button-43"  type="button">Форма обратной связи</button>
-					</div>
+					</div> -->
 				</div>
 			</section>
 			<!-- /Адрес -->
@@ -236,11 +235,11 @@
 		</main>
 		<!-- Подвал -->
 
-		<div class="wrapper">
 			<footer class="page-footer">
+				<div class="wrapper page-footer__wrapper">
 				<!-- Соцсети -->
 				<h2 class="hidden">Наши контакты в социальных сетях</h2>
-				<ul class="page-footer__column socials">
+				<ul class="page-footer__column page-footer__column-socials socials">
 					<li class="socials__item">
 						<a class="socials__link" href="#">
 							<img class="socials__icon" src="img/icons/facebook.svg" alt="Фейсбук" width="32" height="32">
@@ -283,10 +282,10 @@
 
 				<div class="page-footer__column">
 					<img class="page-footer__logo" src="img/icons/logo_html_academy.svg" alt="HTML Академия" width="109" height="31">
-					<p class="page-footer__copyright">Сделано в <a class="link-academy link" href="https://htmlacademy.ru"> HTML Academy © 2021</a></p>
+					<p class="page-footer__copyright">Сделано в <a class="link-academy link" href="https://htmlacademy.ru"> HTML Academy</a> © 2021</p>
 				</div>
+			</div>
 			</footer>
 			<!-- /Подвал -->
-		</div>
 	</body>
 </html>

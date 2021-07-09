@@ -8,8 +8,7 @@
 		<link rel="apple-touch-icon" href="img/favicon_180.png">
 		<link rel="manifest" href="manifest.webmanifest">
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
-		<link href="normalize.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body class="page-body">
@@ -24,13 +23,25 @@
 					<div class="main-header__bar">
 						<ul class="main-header__site-navigation">
 							<li class="main-header__site-navigation-item">
-								<a class="main-header__site-navigation-link link" href="catalog.html">Каталог</a>
+								<a class="main-header__site-navigation-link link" href="catalog.html">
+									<span class="main-header__site-navigation-text">
+										Каталог
+									</span>
+								</a>
 							</li>
 							<li class="main-header__site-navigation-item">
-								<a class="main-header__site-navigation-link link" href="#">Доставка и оплата</a>
+								<a class="main-header__site-navigation-link link" href="#">
+									<span class="main-header__site-navigation-text">
+										Доставка и оплата
+									</span>
+								</a>
 							</li>
 							<li class="main-header__site-navigation-item">
-								<a class="main-header__site-navigation-link link" href="#">О компании</a>
+								<a class="main-header__site-navigation-link link" href="#">
+									<span class="main-header__site-navigation-text">
+										О компании
+									</span>
+								</a>
 							</li>
 						</ul>
 
@@ -67,21 +78,21 @@
 				<section class="slider">
 
 					<ul class="slider__list">
-						<li class="slider__item">
+						<li class="slider__item slide">
 							<h2 class="slider__item-description">Пломбир с помадкой и клубничный щербет</h2>
 							<div class="slider__item-image">
 								<img src="img/ice_cream_group_1.png" alt="Белый пломбир с шоколадной помадкой и розовый сорбет в вафельных рожках" width="639" height="582">
 							</div>
 							<a class="slider__item-link button button--font-large" href="#"> Давайте оба!</a>
 						</li>
-						<li class="slider__item slider__hidden">
+						<li class="slider__item slide slider__hidden">
 							<h2 class="slider__item-description">Шоколадный пломбир и лимонный сорбет</h2>
 							<div class="slider__item-image">
 								<img src="img/ice_cream_group_2.png" alt="Пломбир с шоколадными капельками и лимонный сорбет в вафельных рожках" width="644" height="582">
 							</div>
 							<a class="slider__item-link button button--font-large" href="#"> Давайте оба!</a>
 						</li>
-						<li class="slider__item slider__hidden">
+						<li class="slider__item slide slider__hidden">
 							<h2 class="slider__item-description">Крем-брюле и пломбир с малиновым джемом</h2>
 							<div class="slider__item-image">
 								<img src="img/ice_cream_group_3.png" alt="Крем-брюле с шоколадным соусом и пломбир с малиновым джемом в вафельных рожках" width="647" height="584">
@@ -89,8 +100,14 @@
 							<a class="slider__item-link" href="#"> Давайте оба!</a>
 						 </li>
 					</ul>
+					<div class="slider-controls">
+						<button type="button" aria-label="Первый слайд"></button>
+						<button type="button" aria-label="Второй слайд"></button>
+						<button type="button" aria-label="Третий слайд"></button>
+					</div>
 				</section>
-				<!-- /Слайдер -->
+
+
 
 				<!-- Акции -->
 				<h2 class="visually-hidden">Список акций</h2>
@@ -215,14 +232,14 @@
 
 			<!-- Адрес -->
 			<section class="address">
-				<div class="wrapper">
+				<div class="wrapper adress__wrapper">
 					<h2 class="visually-hidden">Адрес и телефон для связи</h2>
 					<div class="address__info">
 						<p class="address__description">Адрес главного офиса и офлайн-магазина:</p>
-						<address class="adress__adress">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
+						<address class="adress__adress">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</address>
 						<p class="address__description">Для заказов по телефону:</p>
 						<a class="address__phone" href="tel:+78005558628">+7 800 555-86-28</a>
-						<p class="address__description">(с 10 до 20 ежедневно)</p>
+						<p class="address__description address__description-time">(с 10 до 20 ежедневно)</p>
 						<button class="button button--font-very-small"  type="button">Форма обратной связи</button>
 					</div>
 				</div>
@@ -283,7 +300,7 @@
 					<p class="page-footer__copyright">Сделано в <a class="link-academy link" href="https://htmlacademy.ru"> HTML Academy</a> © 2021</p>
 				</div>
 			</div>
-			</footer>
-			<!-- /Подвал -->
+		</footer>
+		<!-- /Подвал -->
 	</body>
 </html>

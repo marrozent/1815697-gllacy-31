@@ -25,32 +25,41 @@
 
 				<ul class="main-header__site-navigation">
 					<li class="main-header__site-navigation-item">
-						<a class="main-header__site-navigation-link link" href="#">Каталог</a>
+						<a class="main-header__site-navigation-link link" href="#">
+							<span class="main-header__site-navigation-text">
+								Каталог
+							</span>
+						</a>
 					</li>
 					<li class="main-header__site-navigation-item">
-						<a class="main-header__site-navigation-link link" href="#">Доставка и оплата</a>
+						<a class="main-header__site-navigation-link link" href="#">
+							<span class="main-header__site-navigation-text">
+								Доставка и оплата
+							</span>
+						</a>
 					</li>
 					<li class="main-header__site-navigation-item">
-						<a class="main-header__site-navigation-link link" href="#">О компании</a>
+						<a class="main-header__site-navigation-link link" href="#">
+							<span class="main-header__site-navigation-text">
+								О компании
+							</span>
+						</a>
 					</li>
 				</ul>
 
 				<ul class="main-header__user-navigation">
 					<li class="main-header__user-navigation-item">
-						<button class="main-header__user-navigation-button" type="button">
-							<!-- <img src="img/icons/loupe_icon.svg" alt="Поиск"> -->
+						<button class="main-header__user-navigation-button search-button" type="button">
 						</button>
 					</li>
 					<li class="main-header__user-navigation-item">
-						<button class="main-header__user-navigation-button" type="button">
-							<!-- <img src="img/icons/enter_icon.svg" alt="Авторизация"> --> 
-							Вход
+						<button class="main-header__user-navigation-button enter-button" type="button"> 
+							<span class="main-header__button-text">Вход</span>
 						</button>
 					</li>
 					<li class="main-header__user-navigation-item">
-						<button class="main-header__user-navigation-button" type="button">
-							<!-- <img src="img/icons/shopping-cart_icon.svg" alt="Корзина">  -->
-							2 товара
+						<button class="main-header__user-navigation-button cart-button-full" type="button">
+							<span class="main-header__button-text">2 товара</span>
 						</button>
 					</li>
 				</ul>
@@ -65,9 +74,9 @@
 		<main>
 			<div class="wrapper">
 			<ul class="breadcrumbs">
-				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
 				<li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
-				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Сливочное</a></li>
+				<li class="breadcrumbs__item"><a class="breadcrumbs__link">Сливочное</a></li>
 			</ul>
 			<h1 class="catalog__title">Cливочное мороженное</h1>
 			<form class="filter" action="https://echo.htmlacademy.ru/courses" method="get">
@@ -144,7 +153,7 @@
 			</form>
 
 			<section>
-				<h1 >Наши товары</h1>
+				<h1 class="visually-hidden">Наши товары</h1>
 				<ul class="catalog__list">
 					<li class="catalog__item product">
 						<a class="product__link link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>

@@ -95,28 +95,28 @@
 				<fieldset class="filter__fieldset">
 					<legend class="filter__title">Цена: 100 ₽ – 500 ₽</legend>
 					<div>
-						<input type="range" min="0" max="1000" name="price">
+						<input class="filter__price" type="range" min="0" max="1000" name="price">
 					</div>
 				</fieldset>
 
 				<fieldset class="filter__fieldset">
 					<legend class="filter__title">Жирность:</legend>
-					<div>
-						<label>
+					<div class="filter__fat">
+						<label class="filter__fat-label">
 							<input class="filter__radio" type="radio" name="fat" value="0%">
 							0%
 							<span>
 							</span>
 						</label>
-						<label>
+						<label class="filter__fat-label">
 							<input class="filter__radio" type="radio" name="fat" value="до 10%" checked>
 							до 10%
 						</label>
-						<label>
+						<label class="filter__fat-label">
 							<input class="filter__radio" type="radio" name="fat" value="до 30%">
 							до 30%
 						</label>
-						<label>
+						<label class="filter__fat-label">
 							<input class="filter__radio" type="radio" name="fat" value="выше 30%">
 							выше 30%
 						</label>
@@ -125,7 +125,7 @@
 
 				<fieldset class="filter__fieldset">
 					<legend class="filter__title">Наполнители:</legend>
-					<div>
+					<div class="filter__checkbox-div">
 						<label>
 							<input class="filter__checkbox" type="checkbox" name="decor_chocolate" checked="">
 							шоколадные
@@ -163,7 +163,7 @@
 							</a>
 							<p class="product__price">310 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden " type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -174,7 +174,7 @@
 							</a>
 							<p class="product__price">380 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -185,7 +185,7 @@
 							</a>
 							<p class="product__price">355 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -196,7 +196,7 @@
 							</a>
 							<p class="product__price">415 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -207,7 +207,7 @@
 							</a>
 							<p class="product__price">325 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button  visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -218,7 +218,7 @@
 							</a>
 							<p class="product__price">410 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -229,7 +229,7 @@
 							</a>
 							<p class="product__price">315 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -240,7 +240,7 @@
 							</a>
 							<p class="product__price">320 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -251,7 +251,7 @@
 							</a>
 							<p class="product__price">440 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -262,7 +262,7 @@
 							</a>
 							<p class="product__price">435 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 
 					<li class="catalog__item product">
@@ -273,7 +273,7 @@
 							</a>
 							<p class="product__price">355 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li> 
 
 					<li class="catalog__item product">
@@ -284,7 +284,7 @@
 							</a>
 							<p class="product__price">420 ₽<small>/кг</small></p>
 						</div>
-						<button class="button" type="button">Быстрый просмотр</button>
+						<button class="button product__button visually-hidden" type="button">Быстрый просмотр</button>
 					</li>
 				</ul>
 
@@ -351,5 +351,6 @@
 		</div>
 		</footer>
 		<!-- /Подвал -->
+
 	</body>
 </html>

@@ -1032,11 +1032,11 @@ ul {
 
 .product__info {
 	position: relative;
+	margin-bottom: 14px;
 }
 
 .product__image {
 	display: block;
-	margin-bottom: 14px;
 }
 
 .product__image img {
@@ -1045,7 +1045,8 @@ ul {
 
 .product__price {
 	position: absolute;
-	bottom: 25px;
+	left: 0;
+	bottom: 12px;
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 45px;
@@ -1498,7 +1499,8 @@ ul {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	min-width: 869px;
+	justify-content: space-between;
+	width: 869px;
 	margin-bottom: 40px;
 
 }
@@ -1541,10 +1543,6 @@ ul {
 	font-size: 14px;
 	line-height: 16px;
 	color: var(--basic-black);
-}
-
-.filter__fieldset--price {
-	margin: 0 15px;
 }
 
 .range {
@@ -1636,7 +1634,9 @@ ul {
 	width: 425px;
 	height: 36px;
 	border-radius: 20px;
-	padding: 7px 15px;
+	padding: 7px;
+	padding-left: 14px;
+	padding-right: 18px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border: none;
 	-webkit-appearance: none;
@@ -1735,7 +1735,9 @@ ul {
 	width: 711px;
 	height: 36px;
 	border-radius: 20px;
-	padding: 8px 16px;
+	padding: 8px;
+	padding-left: 14px;
+	padding-right: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border: none;
 	-webkit-appearance: none;
@@ -1756,6 +1758,7 @@ ul {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	padding-left: 32px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1763,10 +1766,12 @@ ul {
 
 .checkbox__text::before {
 	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
 	display: block;
 	width: 24px;
 	height: 20px;
-	margin-right: 8px;
 	background-repeat: no-repeat;
 	opacity: 0.8;
 }
@@ -1793,7 +1798,6 @@ ul {
 	width: 144px;
 	height: 36px;
 	padding: 6px;
-	margin-left: 15px;
 	margin-top: auto;
 	font-size: 16px;
 	line-height: 18px;

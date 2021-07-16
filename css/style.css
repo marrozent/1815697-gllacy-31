@@ -924,7 +924,7 @@ ul {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	margin: 0 -10px;
+	margin: 0 -13px;
 	margin-top: -5px;
 	margin-bottom: -20px;
 }
@@ -1394,8 +1394,16 @@ ul {
 	height: 26px;
 }
 
-.pagination-list__item:not(:last-child) {
-	margin-right: 6px;
+.pagination-list__item {
+	margin-right: 4px;
+}
+
+.pagination-list__item:first-child {
+	margin-right: 10px;
+}
+
+.pagination-list__item:last-child {
+	margin-left: 10px;
 }
 
 .pagination-list__link {
@@ -1416,7 +1424,7 @@ ul {
 
 .pagination-list__link--prev,
 .pagination-list__link--next {
-	width: 13px;
+	width: 12px;
 	background-image: url('../img/icons/catalog-icons/arrow-right.svg');
 	background-size: 8px 12px;
 	background-repeat: no-repeat;

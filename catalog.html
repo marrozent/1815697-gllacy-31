@@ -21,14 +21,12 @@
 					</a>
 
 					<div class="main-header__bar">
-						<ul class="main-header__site-navigation">
+						<ul class="main-header__site-navigation list">
 							<li class="main-header__site-navigation-item">
 								<a class="main-header__site-navigation-link is-active">
-									<span class="main-header__site-navigation-text">
-										Каталог
-									</span>
+									Каталог
 								</a>
-								<ul class="main-header__site-subnavigation">
+								<ul class="main-header__site-subnavigation list">
 									<li class="main-header__site-subnavigation-item">
 										<p class="main-header__site-subnavigation-title">Новинки</p>
 									</li>
@@ -48,21 +46,17 @@
 							</li>
 							<li class="main-header__site-navigation-item">
 								<a class="main-header__site-navigation-link" href="#">
-									<span class="main-header__site-navigation-text">
-										Доставка и оплата
-									</span>
+									Доставка и оплата
 								</a>
 							</li>
 							<li class="main-header__site-navigation-item">
 								<a class="main-header__site-navigation-link" href="#">
-									<span class="main-header__site-navigation-text">
-										О компании
-									</span>
+									О компании
 								</a>
 							</li>
 						</ul>
 
-						<ul class="main-header__user-navigation">
+						<ul class="main-header__user-navigation list">
 							<li class="main-header__user-navigation-item search">
 								<button class="main-header__user-navigation-button search__button" type="button">
 									<span class="visually-hidden">Поиск</span>
@@ -71,7 +65,8 @@
 									</svg>
 								</button>
 								<form class="search__form" action="index.html" method="post">
-									<input type="search" name="search" placeholder="Крем-брюле" class="search__field field field--modal">
+									<label for="search-field" class="visually-hidden">Начать поиск</label>
+									<input id="search-field" type="search" name="search" placeholder="Крем-брюле" class="search__field field field--modal">
 								</form>
 							</li>
 							<li class="main-header__user-navigation-item enter">
@@ -84,8 +79,11 @@
 								</button>
 
 								<form class="enter__form" action="index.html" method="post">
-									<input type="email" name="email" placeholder="email@example.com" class="enter__field field field--modal">
-									<input type="password" name="password" placeholder="......" class="enter__field field">
+									<label for="enter-email" class="visually-hidden">Ваш Email</label>
+									<input id="enter-email" type="email" name="email" placeholder="email@example.com" class="enter__field field field--modal">
+
+									<label for="enter-password" class="visually-hidden">Ваш пароль</label>
+									<input id="enter-password" type="password" name="password" placeholder="......" class="enter__field field">
 									<div class="enter__row">
 										<button class="enter__sign-in button button--font-medium" type="submit" name="button-enter">Войти</button>
 										<div class="enter__help">
@@ -107,7 +105,7 @@
 								</button>
 								<div class="cart__content">
 									<h2 class="visually-hidden">Корзина</h2>
-									<ul class="cart__list">
+									<ul class="cart__list list">
 										<li class="cart__item cart-item">
 											<button class="cart-item__delete" type="button"><span class="visually-hidden">Удалить</span></button>
 											<a href="#" class="cart-item__image">
@@ -147,7 +145,7 @@
 		<!-- /Шапка -->
 		<main>
 			<div class="wrapper">
-			<ul class="breadcrumbs">
+			<ul class="breadcrumbs list">
 				<li class="breadcrumbs__item">
 					<a class="breadcrumbs__link link" href="index.html">
 						<span class="link__text">Главная</span>
@@ -194,7 +192,7 @@
 
 					<fieldset class="filter__fieldset filter__fieldset--radio-button">
 						<legend class="filter__title">Жирность:</legend>
-						<ul class="filter__fat">
+						<ul class="filter__fat list">
 							<li class="filter__fat-item">
 								<label class="filter__fat-label radio">
 									<input class="filter__radio radio__input visually-hidden" type="radio" name="fat" value="0%">
@@ -227,7 +225,7 @@
 
 					<fieldset class="filter__fieldset filter__fieldset--checkbox">
 						<legend class="filter__title">Наполнители:</legend>
-						<ul class="filter__checkbox-list">
+						<ul class="filter__checkbox-list list">
 							<li class="filter__checkbox-item">
 								<label class="checkbox">
 									<input class="checkbox__input visually-hidden" type="checkbox" name="decor_chocolate" checked="">
@@ -268,7 +266,7 @@
 					<input class="filter__submit" type="submit" name="sent" value="Применить">
 				</form>
 
-				<ul class="catalog__list">
+				<ul class="catalog__list list">
 					<li class="catalog__item product">
 						<a class="product__link link" href="#">
 							<span class="link__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
@@ -426,7 +424,7 @@
 					</li>
 				</ul>
 
-				<ul class="catalog__pagination pagination-list">
+				<ul class="catalog__pagination pagination-list list">
 					<li class="pagination-list__item">
 						<a class="pagination-list__link pagination-list__link--prev is-disabled">
 							<span class="visually-hidden">Прошлая страница</span>
@@ -462,7 +460,7 @@
 				<div class="wrapper page-footer__wrapper">
 				<!-- Соцсети -->
 				<h2 class="visually-hidden">Наши контакты в социальных сетях</h2>
-				<ul class="page-footer__column page-footer__column-socials socials">
+				<ul class="page-footer__column page-footer__column-socials socials list">
 					<li class="socials__item">
 						<a class="socials__link" href="#">
 							<img class="socials__icon" src="img/icons/facebook.svg" alt="Фейсбук" width="32" height="32">
@@ -485,7 +483,7 @@
 					</li>
 				</ul>
 				<!-- /Соцсети -->
-				<ul class="page-footer__column footer-nav">
+				<ul class="page-footer__column footer-nav list">
 					<li class="footer-nav__item">
 						<a class="footer-nav__link footer-nav__link--heart link" href="#">
 							<span class="link__text">Для поставщиков</span>

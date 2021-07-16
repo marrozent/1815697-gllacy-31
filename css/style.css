@@ -39,7 +39,7 @@
 }
 
 :root {
-  --basic-black:#323232;
+  --basic-black: #323232;
   --basic-dark: #5A5A5A;
   --basic-white: #FFFFFF;
   --background-beige: #9D8B84;
@@ -103,7 +103,7 @@
 	margin: 0;
 }
 
-ul {
+.list {
 	list-style: none;
 }
 
@@ -131,7 +131,7 @@ ul {
 .slider-controls__button {
 	width: 21px;
 	height: 21px;
-	margin-right: 6px;
+	margin-right: 4px;
 	background-color: transparent;
 	border: 2px solid var(--basic-white);
 	border-radius: 50%;
@@ -162,6 +162,7 @@ ul {
 .link,
 .link-black {
 	display: inline-block;
+	vertical-align: middle;
 	text-decoration: none;
 }
 
@@ -229,6 +230,7 @@ ul {
 	border-radius: 70px;
 	border: none;
 	display: inline-block;
+	vertical-align: middle;
 	cursor: pointer;
 	-webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 	        box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -239,7 +241,6 @@ ul {
 	background: -o-linear-gradient(top, #f26843, #e74a35);
 	background: linear-gradient(to bottom, #f26843, #e74a35);
 	text-align: center;
-	vertical-align: top;
 }
 
 .button:hover {
@@ -329,7 +330,9 @@ ul {
 	    flex-wrap: wrap;
 }
 
-.main-header__site-navigation-link:not(.is-active):not(:hover):not(:focus):not(:active) .main-header__site-navigation-text {
+.main-header__site-navigation-link:not(.is-active):not(:hover):not(:focus):not(:active)::after {
+	content: '';
+	display: block;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -555,12 +558,12 @@ ul {
 
 .field:hover {
 	border-width: 2px;
-	padding: 12px 14px;
+	padding: 12px;
 }
 
 .field:focus {
 	border: 2px solid rgba(46, 136, 228, 0.52);
-	padding: 12px 14px;
+	padding: 12px;
 	outline: none;
 }
 
@@ -702,6 +705,7 @@ ul {
 	        flex-grow: 1;
 	margin: 0 13px;
 	display: inline-block;
+	vertical-align: middle;
 	text-decoration: none;
 	color: var(--basic-black);
 }
@@ -737,10 +741,8 @@ ul {
 	font-weight: 700;
 }
 
-.cart__order-button {
-	display: inline-block;
-	padding: 14px 15px;
-	line-height: 16px;
+.cart__order-buttion {
+	padding: 10px 15px;
 }
 
 .main-header__user-navigation {
@@ -768,6 +770,7 @@ ul {
 
 .main-header__phone {
 	display: inline-block;
+	vertical-align: top;
 	margin-top: 8px;
 	font-size: 22px;
 	line-height: 24px;
@@ -851,7 +854,7 @@ ul {
 
 .actions__background-raspberries {
 	width: 560px;
-	height: 229px;
+	min-height: 229px;
 	background-image: url(../img/background/raspberry-background.jpg);
 	border-radius: 16px;
 	background-color: var(--raspberry-background);
@@ -896,9 +899,11 @@ ul {
 	padding: 16px;
 	padding-bottom: 22px;
 	padding-right: 22px;
+	background-size: cover;
 }
 
 .actions__description {
+	margin-bottom: 10px;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 22px;
@@ -1073,28 +1078,6 @@ ul {
 }
 
 
-.advantages__icon {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	width: 49px;
-	height: 49px;
-	border: 1px solid var(--basic-black);
-	border-radius: 50%;
-	-ms-flex-negative: 0;
-	    flex-shrink: 0;
-	-webkit-box-ordinal-group: 0;
-	    -ms-flex-order: -1;
-	        order: -1;
-	margin-right: 6px;
-}
-
 .advantages__title {
 	font-weight: 500;
 	font-size: 24px;
@@ -1109,18 +1092,46 @@ ul {
 	display: flex;
 }
 
+.advantages__item::before {
+	content: '';
+	display: block;
+	flex-shrink: 0;
+	width: 49px;
+	height: 49px;
+	margin-right: 6px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.advantages__item:first-child::before {
+	background-image: url('../img/icons/ice-cream_black.svg');
+}
+
+.advantages__item:nth-child(2)::before {
+	background-image: url('../img/icons/cow-black.svg');
+}
+
+.advantages__item:nth-child(3)::before {
+	background-image: url('../img/icons/leaf_black.svg');
+}
+
+.advantages__item:nth-child(4)::before {
+	background-image: url('../img/icons/thermometer.svg');
+}
+
+
 .advantages__background-waffle {
 	width: 1146px;
-	height: 306px;
+	min-height: 306px;
 	background-image: url(../img/background/waffle-background.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 	border-radius: 16px;
 	background-color: var(--waffle-background);
 }
 
 .advantages__description {
 	padding-top: 10px;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 22px;
 	color: var(--basic-black);
@@ -1177,7 +1188,7 @@ ul {
 
 .subscription {
 	width: 560px;
-	height: 220px;
+	min-height: 220px;
 	background-image: url(../img/background/subscription-background.jpg);
 	border-radius: 16px;
 	padding: 5px;
@@ -1297,6 +1308,7 @@ ul {
 
 .socials__link {
 	display: inline-block;
+	vertical-align: top;
 	width: 36px;
 	height: 36px;
 	border: 2px solid rgba(255, 255, 255, 0.5);
@@ -1404,10 +1416,12 @@ ul {
 
 .pagination-list__item:last-child {
 	margin-left: 10px;
+	margin-right: 0;
 }
 
 .pagination-list__link {
 	display: inline-block;
+	vertical-align: middle;
 	text-align: center;
 	width: 26px;
 	height: 26px;
@@ -1483,6 +1497,7 @@ ul {
 .breadcrumbs__item:not(:last-child)::after {
 	content: "";
 	display: inline-block;
+	vertical-align: middle;
 	width: 6px;
 	height: 6px;
 	background-image: url("../img/icons/catalog-icons/double-arrow.svg");
@@ -1633,6 +1648,7 @@ ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
@@ -1640,7 +1656,7 @@ ul {
 	    -ms-flex-align: center;
 	        align-items: center;
 	width: 425px;
-	height: 36px;
+	min-height: 36px;
 	border-radius: 20px;
 	padding: 7px;
 	padding-left: 14px;
@@ -1734,6 +1750,7 @@ ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
@@ -1741,7 +1758,7 @@ ul {
 	    -ms-flex-align: center;
 	        align-items: center;
 	width: 711px;
-	height: 36px;
+	min-height: 36px;
 	border-radius: 20px;
 	padding: 8px;
 	padding-left: 14px;
@@ -1803,6 +1820,7 @@ ul {
 
 .filter__submit {
 	display: inline-block;
+	vertical-align: middle;
 	width: 144px;
 	height: 36px;
 	padding: 6px;

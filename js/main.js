@@ -1,7 +1,7 @@
 // Карта
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
-      center: [59.968811, 30.326291],
+      center: [59.968811, 30.326991],
       zoom: 15
     }),
 
@@ -67,3 +67,66 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+// Слайдер
+
+/* Индекс слайда по умолчанию */
+let slideIndex = 1;
+showSlides(slideIndex);
+
+/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+function plusSlide() {
+    showSlides(slideIndex += 1);
+}
+
+/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+function minusSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Основная функция слайдера */
+function showSlides(n) {
+  let i;
+  let bodyBackground = document.querySelector('.page-body');
+  let slides = document.getElementsByClassName('slide');
+  let dots = document.getElementsByClassName('slider-controls__button');
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.add('slide__hidden');
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList = dots[i].className.replace(' is-active', '');
+  }
+
+  slides[slideIndex - 1].classList.remove('slide__hidden');
+  dots[slideIndex - 1].classList += ' is-active';
+
+  bodyBackground.classList.remove('first-slide', 'second-slide', 'third-slide');
+  switch (slideIndex) {
+  case 1:
+    bodyBackground.classList.add('first-slide');
+    break;
+  case 2:
+    bodyBackground.classList.add('second-slide');
+    break;
+  case 3:
+    bodyBackground.classList.add('third-slide');
+    break;
+  default:
+    bodyBackground.classList.add('first-slide');
+  }
+}

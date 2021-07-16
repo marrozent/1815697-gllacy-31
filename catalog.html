@@ -9,7 +9,7 @@
 		<link rel="apple-touch-icon" href="img/favicon_180.png">
 		<link rel="manifest" href="manifest.webmanifest">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	</head>
 	<body class="page-body inner-page">
 		<!-- Шапка -->
@@ -138,7 +138,7 @@
 				</nav>
 				<div class="main-header__description">с 10 до 20, ежедневно
 					<br>
-					<a class="main-header__phone" href="tel:88124502525">8 812 450-25-25</a>
+					<a class="main-header__phone link" href="tel:88124502525">8 812 450-25-25</a>
 				</div>
 			</div>
 		</header>
@@ -169,7 +169,8 @@
 				<form class="catalog__filter filter" action="https://echo.htmlacademy.ru/courses" method="get">
 					<fieldset class="filter__fieldset filter__fieldset--select">
 						<legend class="filter__title">Сортировка:</legend>
-						<select class="filter__select" name="sorting">
+						<label for="sort-select" class="visually-hidden">Отсортировать по: </label>
+						<select id="sort-select" class="filter__select" name="sorting">
 							<option class="filter__option" value="popular" selected>по популярности</option>
 							<option class="filter__option" value="cheap" >сначала недорогие</option>
 							<option class="filter__option" value="expensive" >сначала дорогие</option>
@@ -516,5 +517,6 @@
 			</div>
 		</footer>
 		<!-- /Подвал -->
+		<script src="js/main.min.js"></script>
 	</body>
 </html>

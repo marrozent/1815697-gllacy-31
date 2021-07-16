@@ -8,7 +8,7 @@
 		<link rel="apple-touch-icon" href="img/favicon_180.png">
 		<link rel="manifest" href="manifest.webmanifest">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	</head>
 	<body class="page-body">
 		<!-- Шапка -->
@@ -123,21 +123,21 @@
 						<li class="slider__item slide">
 							<h2 class="slider__item-description">Пломбир с помадкой и клубничный щербет</h2>
 							<div class="slider__item-image">
-								<img src="img/ice_cream_group_1.png" alt="Белый пломбир с шоколадной помадкой и розовый сорбет в вафельных рожках" width="639" height="582">
+								<img src="img/ice_cream_group_1.png" alt="Белый пломбир с шоколадной помадкой и розовый сорбет в вафельных рожках" width="1200" height="966">
 							</div>
 							<a class="slider__item-link button button--font-large" href="#"> Давайте оба!</a>
 						</li>
 						<li class="slider__item slide slider__hidden">
 							<h2 class="slider__item-description">Шоколадный пломбир и лимонный сорбет</h2>
 							<div class="slider__item-image">
-								<img src="img/ice_cream_group_2.png" alt="Пломбир с шоколадными капельками и лимонный сорбет в вафельных рожках" width="644" height="582">
+								<img src="img/ice_cream_group_2.png" alt="Пломбир с шоколадными капельками и лимонный сорбет в вафельных рожках" width="1200" height="966">
 							</div>
 							<a class="slider__item-link button button--font-large" href="#"> Давайте оба!</a>
 						</li>
 						<li class="slider__item slide slider__hidden">
 							<h2 class="slider__item-description">Крем-брюле и пломбир с малиновым джемом</h2>
 							<div class="slider__item-image">
-								<img src="img/ice_cream_group_3.png" alt="Крем-брюле с шоколадным соусом и пломбир с малиновым джемом в вафельных рожках" width="647" height="584">
+								<img src="img/ice_cream_group_3.png" alt="Крем-брюле с шоколадным соусом и пломбир с малиновым джемом в вафельных рожках" width="1200" height="966">
 							</div>
 							<a class="slider__item-link button button--font-large" href="#">Давайте оба!</a>
 						 </li>
@@ -278,6 +278,7 @@
 
 			<!-- Адрес -->
 			<section class="address">
+				<div class="address__map" id="map"></div>
 				<div class="wrapper adress__wrapper">
 					<h2 class="visually-hidden">Адрес и телефон для связи</h2>
 					<div class="address__info">
@@ -286,7 +287,7 @@
 						<p class="address__description">Для заказов по телефону:</p>
 						<a class="address__phone link-black" href="tel:+78005558628">+7 800 555-86-28</a>
 						<p class="address__description address__description-time">(с 10 до 20 ежедневно)</p>
-						<a href="#" class="address__button button button--font-very-small">Форма обратной связи</a>
+						<a href="#" class="address__button button button--font-very-small feedback-link">Форма обратной связи</a>
 					</div>
 				</div>
 			</section>
@@ -366,19 +367,22 @@
 				<button class="popup__close" type="button" title="Закрыть"></button>
 
 				<p class="popup__title">Мы обязательно вам ответим!</p>
-				<form class="feedback" action="index.html" method="post">
-					<label for="feedback-name" class="visually-hidden">Ваше Имя</label>
-					<input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия" class="feedback__field field">
+				<form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
+					<label for="feedback-user-name" class="visually-hidden">Ваше Имя</label>
+					<input id="feedback-user-name" type="text" name="feedback-name" placeholder="Имя Фамилия" class="feedback-form__field field feedback-user-name">
 
 					<label for="feedback-email" class="visually-hidden">Ваш Email</label>
-					<input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com" class="feedback__field field">
+					<input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com" class="feedback-form__field field feedback-email">
 
 					<label for="feedback-comment" class="visually-hidden">Ваш комментарий</label>
-					<textarea id="feedback-comment" name="comment" rows="6" cols="35" placeholder="В свободной форме" class="feedback__textarea field field--textarea"></textarea>
+					<textarea id="feedback-comment" name="comment" rows="6" cols="35" placeholder="В свободной форме" class="feedback-form__textarea field field--textarea feedback-comment"></textarea>
 
-					<input class="feedback__button button button--font-medium" type="submit" name="feedback-submit" value="Отправить">
+					<input class="feedback-form__button button button--font-medium" type="submit" name="feedback-submit" value="Отправить">
 				</form>
 			</div>
 		</div>
+
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;amp;apikey=8c4697af-8af9-4130-ba3c-3260d2bb30d9"></script>
+		<script src="js/main.min.js"></script>
 	</body>
 </html>
